@@ -109,14 +109,13 @@ section {
     text-align: center;
 }
 .form-container {
-    max-width: 30%;
+    max-width: 100%;
     margin: 0 auto;
     padding: 7px;
     border-radius: 20px;
     box-shadow: 0 2px 4px rgb(131, 127, 127);
 }
 .form-container:hover{
-    transform: scale(1.05); 
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 .form-container label {
@@ -124,11 +123,6 @@ section {
 }
 .form-container .form-control {
     margin-bottom: 15px;
-}
-
-/* button */
-.btn:hover{
-    transform: scale(1.05);
 }
 
 /* Footer */
@@ -164,5 +158,44 @@ section {
 @media (max-width: 480px) {
     .images img {
         flex: 1 1 100%; /* For 1 image per row */
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #book-taxi {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .form-control {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    #book-taxi {
+        margin: 5px;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .form-control {
+        font-size: 13px;
+    }
+
+    button {
+        font-size: 14px;
     }
 }
