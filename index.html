@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <title>Taxi Booking Site</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h4>Taxi Booking Site</h4>
+        <a href="#home">Home</a>
+        <a href="#places">Popular Cities</a>
+        <a href="#about">About Us</a>
+        <a href="#book-taxi">Book a Taxi</a>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <h2>Ride With Us...</h2>
+        <p>Your trusted partner for safe, reliable, and affordable taxi services. Explore our services and discover the easiest way to travel in style.</p>
+        <p>
+            Looking for a hassle-free way to get around? Taxi Booking Site is your one-stop solution for booking reliable, affordable, and convenient rides. Whether you're commuting to work, heading to the airport, or planning a road trip, we’ve got you covered.
+        </p>
+        <p>
+            Book your ride in just a few clicks and experience unmatched comfort with our professional drivers and well-maintained vehicles. Explore your city or travel long distances without worries. Your journey starts here!
+        </p>
+    </section>
+
+    <!-- Popular Cities Section -->
+    <div class="container">
+        <section id="places" class="city">
+            <p>Popular Cities</p>
+            <div class="images">
+                <img src="images/chennai.jfif" alt="Chennai">
+                <img src="images/coimbatore.jfif" alt="Coimbatore">
+                <img src="images/kanyakumari.jfif" alt="Kanyakumari">
+                <img src="images/yercaud.jfif" alt="Yercaud">
+                <img src="images/kerala.jfif" alt="Kerala">
+                <img src="images/tenkasi.jfif" alt="Tenkasi">
+            </div>
+        </section>
+    </div>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>
+            At Taxi Booking Site, we pride ourselves on delivering top-notch travel experiences for our customers. 
+            Established in [Year], we have become a trusted name in the transportation industry. 
+            Our mission is to make traveling seamless, comfortable, and accessible for everyone.
+        </p>
+        <p>
+            Whether you’re commuting within the city, heading out on a road trip, or visiting new destinations, our services are tailored to meet your needs. 
+            With a fleet of well-maintained vehicles and professional drivers, we ensure your safety and satisfaction.
+        </p>
+    </section>
+
+    <!-- Book a Taxi Section -->
+    <section id="book-taxi">
+        <h2>Book a Taxi</h2>
+        <div class="form-container">
+            <form id="taxiForm" action="booking.php" method="post">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Enter your full name" required>
+                
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email address" required>
+                
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" class="form-control" placeholder="Enter your phone number" required pattern="[0-9]{10}">
+                
+                <label for="pickup">Pickup Location</label>
+                <input type="text" id="pickup" name="pickup" class="form-control" placeholder="Enter pickup location" required>
+                
+                <label for="destination">Destination</label>
+                <input type="text" id="destination" name="destination" class="form-control" placeholder="Enter destination" required>
+                
+                <label for="date">Pickup Date</label>
+                <input type="date" id="date" name="date" class="form-control" required>
+                
+                <label for="time">Pickup Time</label>
+                <input type="time" id="time" name="time" class="form-control" required>
+                <input type="text" id="ampm" name="ampm" class="form-control" placeholder="Enter AM / PM" required>
+                
+                <button name="insert" class="btn btn-primary w-100">Book Taxi</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 Responsive Webpage. All rights reserved.</p>
+        <div>
+            <img src="images/facebook.png" alt="Facebook" />
+            <img src="images/instagram.png" alt="Instagram" />
+            <img src="images/linkedin.png" alt="Linkedin" />
+            <img src="images/twitter.png" alt="Twitter" />
+        </div>
+    </footer>
+</body>
+</html>
